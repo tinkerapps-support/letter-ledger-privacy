@@ -24,7 +24,7 @@
 <body>
 
 <h1>Privacy Policy — Letter Ledger</h1>
-<div class="date">Last updated: April 26, 2026</div>
+<div class="date">Last updated: April 30, 2026</div>
 
 <p>Letter Ledger ("the app") is a mobile word game developed by Tinker Apps.</p>
 
@@ -36,11 +36,13 @@ United States<br>
 <p>Google LLC may act as an independent data controller for data collected through Google AdMob and Google Play Billing. Tinker Apps and Google are separate controllers. This policy describes Tinker Apps' integration of third-party services, but Google's independent processing is governed by Google's own policies at <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
 
 <h2>Data We Collect</h2>
-<p>The app itself does not collect or transmit personal data. However, third-party services integrated into the app may collect data as described below.</p>
-<p>Game progress, statistics, scores, and settings are saved locally on your device only and are never sent to any server by Tinker Apps.</p>
+<p>Tinker Apps does not directly collect personal data through its own servers; however, integrated third-party services may process certain data as described below.</p>
+<p>Game progress, statistics, scores, and settings are saved locally on your device only and are not transmitted to Tinker Apps servers.</p>
 <p>The following data is collected by third-party SDKs integrated into the app:</p>
 <ul>
-  <li><strong>Advertising ID (Device ID)</strong> — used by Google AdMob to serve and measure ads. AdMob also collects device information, IP address, and approximate location.</li>
+  <li><strong>Advertising ID and approximate location</strong> — used by Google AdMob to serve and measure ads. AdMob also collects device information and IP address. Approximate location may be inferred from IP address or device signals by Google AdMob for ad targeting. This data is shared with Google AdMob, is retained by Google, and is not processed ephemerally.</li>
+  <li><strong>Crash logs</strong> — if the app crashes or encounters an error, Firebase Crashlytics automatically collects a crash report containing device model, OS version, app version, and the stack trace at the time of the crash. Firebase Crashlytics processes crash reports on Tinker Apps' behalf, subject to Google's privacy practices.</li>
+  <li><strong>Diagnostics</strong> — Firebase Analytics automatically collects app usage data including session length, device model, OS version, and general performance metrics. This data is collected and processed through Google Firebase Analytics on Tinker Apps' behalf to understand app usage and improve functionality, subject to Google's applicable privacy terms.</li>
   <li><strong>Purchase confirmation</strong> — your in-app purchase is processed through Google Play Billing. The app receives only a confirmation of a completed purchase to unlock features. Tinker Apps does not store or transmit your payment information.</li>
 </ul>
 <p>Data collected by third-party SDKs is transmitted over encrypted connections (HTTPS/TLS). Tinker Apps does not control how third-party services collect, store, or use this data.</p>
@@ -48,26 +50,44 @@ United States<br>
 <h2>Security</h2>
 <p>Local game data is stored exclusively in your device's sandboxed app storage and is not accessible to other apps. In-app purchases are processed entirely through Google Play's secure billing infrastructure; no payment data passes through Tinker Apps systems. All third-party SDK communications use encrypted connections. While these measures reflect current best practices for an app of this type, no method of data storage or transmission is completely secure.</p>
 
+<h2>Permissions</h2>
+<p>The app requires internet access to serve ads, process purchases, and support analytics and crash reporting. The app does not request precise location, contacts, microphone, or camera permissions. The Advertising ID permission is used solely by Google AdMob for ad serving and measurement.</p>
+
 <h2>Advertising</h2>
 <p>The app displays ads served by Google AdMob. AdMob may use your device's Advertising ID to serve and measure ads. You can reset or limit ad tracking at any time in your device's Google settings. Users who purchase the ad-free upgrade will no longer be shown any ads. For AdMob's data practices, see <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a>.</p>
 <p><strong>Users in the EEA, UK, and Switzerland</strong> are served non-personalized ads only, with personalized advertising disabled. Advertising identifiers are not used for personalized targeting in these regions. Google may still process limited data necessary to deliver contextual ads, ensure security, prevent fraud, and perform basic ad measurement in accordance with applicable law and Google's own policies.</p>
 <p><strong>Users outside the EEA, UK, and Switzerland</strong> may receive personalized ads based on their device's Advertising ID. You can reset or limit ad tracking at any time in your device's Google settings.</p>
 
 <h2>International Data Transfers</h2>
-<p>Google AdMob and Google Play Billing may transfer and process your data on servers located outside the European Economic Area, including in the United States. Google relies on Standard Contractual Clauses approved by the European Commission as the legal mechanism for these transfers. For more information, see <a href="https://policies.google.com/privacy/frameworks">https://policies.google.com/privacy/frameworks</a>. Tinker Apps does not independently transfer personal data outside your country of residence.</p>
+<p>Google AdMob, Google Play Billing, Firebase Crashlytics, and Firebase Analytics may transfer and process your data on servers located outside the European Economic Area, including in the United States. Google relies on Standard Contractual Clauses approved by the European Commission as the legal mechanism for these transfers. For more information, see <a href="https://policies.google.com/privacy/frameworks">https://policies.google.com/privacy/frameworks</a>. Tinker Apps does not independently transfer personal data outside your country of residence.</p>
 
 
 <h2>In-App Purchases</h2>
 <p>The app offers one-time in-app purchases processed through Google Play Billing. Tinker Apps does not receive or store any payment information. All billing data is handled by Google under their terms of service.</p>
 
 <h2>Third Parties</h2>
-<p>The app does not use third-party analytics or tracking services beyond the advertising functionality provided by Google AdMob. Other than Google AdMob and Google Play Billing described above, no other third-party SDKs are included.</p>
+<p>The app integrates the following third-party SDKs:</p>
+<ul>
+  <li><strong>Google AdMob</strong> — ad serving and measurement. See <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a>.</li>
+  <li><strong>Google Play Billing</strong> — in-app purchase processing.</li>
+  <li><strong>Firebase Crashlytics</strong> — crash reporting and error diagnostics. See <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</li>
+  <li><strong>Firebase Analytics</strong> — app usage diagnostics. See <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</li>
+</ul>
+<p>No additional third-party SDKs are currently included in the app. This list will be updated if new services are integrated in future versions.</p>
 
 <h2>Data Retention</h2>
-<p>Tinker Apps does not directly collect or retain personal data. Local game data (scores, settings, progress) remains on your device until you uninstall the app or clear app data in your device settings. Data processed by Google AdMob and Google Play Billing is retained according to Google's own retention policies, which can be reviewed at <a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a>.</p>
+<p>Tinker Apps does not directly collect or retain personal data. Local game data (scores, settings, progress) remains on your device until you uninstall the app or clear app data in your device settings. Data processed by Google AdMob, Google Play Billing, Firebase Crashlytics, and Firebase Analytics is retained according to Google's own retention policies, which can be reviewed at <a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a> and <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>
 
 <h2>Data Deletion</h2>
 <p>You can delete all locally stored game data by uninstalling the app or clearing app data in your device settings. To request deletion of data held by Google, visit <a href="https://myaccount.google.com">https://myaccount.google.com</a> or contact Google directly.</p>
+
+<h2>Legal Bases for Processing (EEA, UK &amp; Switzerland)</h2>
+<p>Where EU/UK data protection law applies, Tinker Apps relies on the following legal bases:</p>
+<ul>
+  <li><strong>Consent</strong> — personalized advertising where applicable (users outside EEA/UK/Switzerland).</li>
+  <li><strong>Legitimate interests</strong> — crash reporting, app diagnostics, and app improvement via Firebase, where these interests are not overridden by your privacy rights.</li>
+  <li><strong>Contract</strong> — processing necessary to complete in-app purchases you initiate.</li>
+</ul>
 
 <h2>Your Rights (EEA, UK &amp; Switzerland)</h2>
 <p>If you are located in the EEA, UK, or Switzerland, you have the following rights regarding personal data processed in connection with the app:</p>
@@ -83,13 +103,13 @@ United States<br>
 <p>You also have the right to lodge a complaint with your local data protection authority. In the EU, a list of national authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">https://edpb.europa.eu/about-edpb/about-edpb/members_en</a>. In the UK, the relevant authority is the Information Commissioner's Office at <a href="https://ico.org.uk">https://ico.org.uk</a>.</p>
 
 <h2>Your Rights (California — CCPA/CPRA)</h2>
-<p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what personal information is collected, the right to delete personal information, and the right to opt out of the sale or sharing of personal information. Tinker Apps does not knowingly sell personal information and does not directly share personal information for cross-context behavioral advertising. However, third-party ad services integrated into the app (Google AdMob) may process data under their own terms, which may constitute "sharing" under California law. You can limit this by resetting or opting out of ad personalization in your device's Google settings. To submit a California privacy request, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>.</p>
+<p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what personal information is collected, the right to delete personal information, and the right to opt out of the sale or sharing of personal information. Tinker Apps does not sell personal information. Depending on your jurisdiction, third-party advertising services integrated into the app (Google AdMob) may process data in ways that may be considered "sharing" under California law. You can limit this by resetting or opting out of ad personalization in your device's Google settings. To submit a California privacy request, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>.</p>
 
 <h2>Data Subject Requests</h2>
 <p>To exercise any privacy right or submit a data-related request, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>. Please include enough information to identify your request. We will respond within 30 days (or within the timeframe required by applicable law). Because Tinker Apps does not directly hold personal data, we may direct you to Google for requests relating to AdMob or billing data.</p>
 
 <h2>Children</h2>
-<p>The app is not intended for children under the minimum digital consent age in their jurisdiction (13 in the US under COPPA; 13–16 depending on EU member state under GDPR; 13 in the UK). We do not knowingly collect personal information from children below these ages. If you believe a child has provided personal information through the app, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a> and we will take appropriate steps.</p>
+<p>The app is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the app and personal information has been collected, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a> and we will take appropriate steps.</p>
 
 <h2>Changes to This Policy</h2>
 <p>We may update this privacy policy from time to time. The updated date at the top of this page will reflect any changes. Where changes materially affect how your data is processed, we will take reasonable steps to notify you, and where legally required we will seek renewed consent before those changes take effect.</p>

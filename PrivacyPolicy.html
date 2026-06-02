@@ -43,9 +43,13 @@ United States<br>
   <li><strong>Advertising ID and approximate location</strong> — used by Google AdMob to serve and measure ads. AdMob also collects device information and IP address. Approximate location may be inferred from IP address or device signals by Google AdMob for ad targeting. This data is shared with Google AdMob, is retained by Google, and is not processed ephemerally.</li>
   <li><strong>Crash logs</strong> — if the app crashes or encounters an error, Firebase Crashlytics automatically collects a crash report containing device model, OS version, app version, and the stack trace at the time of the crash. Firebase Crashlytics processes crash reports on Tinker Apps' behalf, subject to Google's privacy practices.</li>
   <li><strong>Diagnostics</strong> — Firebase Analytics automatically collects app usage data including session length, device model, OS version, and general performance metrics. This data is collected and processed through Google Firebase Analytics on Tinker Apps' behalf to understand app usage and improve functionality, subject to Google's applicable privacy terms.</li>
-  <li><strong>Purchase confirmation</strong> — your in-app purchase is processed through Google Play Billing. The app receives only a confirmation of a completed purchase to unlock features. Tinker Apps does not store or transmit your payment information.</li>
+  <li><strong>Purchase confirmation</strong> — your in-app purchases are processed through Google Play Billing. The app receives only a confirmation of a completed purchase to unlock features. Tinker Apps does not store or transmit your payment information.</li>
 </ul>
 <p>Data collected by third-party SDKs is transmitted over encrypted connections (HTTPS/TLS). Tinker Apps does not control how third-party services collect, store, or use this data.</p>
+
+<h2>Word Suggestions</h2>
+<p>The app includes an optional feature that lets you suggest a word for the game. If you choose to submit a suggestion, the word you enter — along with the selected category and game mode — is sent to a Google Form operated by Tinker Apps so we can review it. Submissions are voluntary and are sent only when you tap submit; if you never use this feature, no suggestion data is sent.</p>
+<p>Please do not include personal information in a suggestion. We use submissions solely to review and improve the game's word lists. Suggestions are collected through Google Forms and stored under Tinker Apps' Google account, subject to <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. We do not associate suggestions with your device, account, or any identifier.</p>
 
 <h2>Security</h2>
 <p>Local game data is stored exclusively in your device's sandboxed app storage and is not accessible to other apps. In-app purchases are processed entirely through Google Play's secure billing infrastructure; no payment data passes through Tinker Apps systems. All third-party SDK communications use encrypted connections. While these measures reflect current best practices for an app of this type, no method of data storage or transmission is completely secure.</p>
@@ -63,7 +67,12 @@ United States<br>
 
 
 <h2>In-App Purchases</h2>
-<p>The app offers one-time in-app purchases processed through Google Play Billing. Tinker Apps does not receive or store any payment information. All billing data is handled by Google under their terms of service.</p>
+<p>The app offers two one-time, non-consumable in-app purchases, processed through Google Play Billing:</p>
+<ul>
+  <li><strong>Remove Ads</strong> — removes interstitial ads.</li>
+  <li><strong>Unlimited Play</strong> — unlocks unlimited play.</li>
+</ul>
+<p>Tinker Apps does not receive or store any payment information. All billing data is handled by Google under their terms of service.</p>
 
 <h2>Third Parties</h2>
 <p>The app integrates the following third-party SDKs:</p>
@@ -73,7 +82,7 @@ United States<br>
   <li><strong>Firebase Crashlytics</strong> — crash reporting and error diagnostics. See <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</li>
   <li><strong>Firebase Analytics</strong> — app usage diagnostics. See <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</li>
 </ul>
-<p>No additional third-party SDKs are currently included in the app. This list will be updated if new services are integrated in future versions.</p>
+<p>No additional third-party SDKs are included beyond those listed above. The optional word-suggestion feature submits data through Google Forms, as described under <em>Word Suggestions</em>. This list will be updated if new services are integrated in future versions.</p>
 
 <h2>Data Retention</h2>
 <p>Tinker Apps does not directly collect or retain personal data. Local game data (scores, settings, progress) remains on your device until you uninstall the app or clear app data in your device settings. Data processed by Google AdMob, Google Play Billing, Firebase Crashlytics, and Firebase Analytics is retained according to Google's own retention policies, which can be reviewed at <a href="https://policies.google.com/technologies/retention">https://policies.google.com/technologies/retention</a> and <a href="https://firebase.google.com/support/privacy">https://firebase.google.com/support/privacy</a>.</p>

@@ -45,7 +45,7 @@ United States<br>
   <li><strong>Diagnostics</strong> — Firebase Analytics automatically collects app usage data including session length, device model, OS version, and general performance metrics. This data is collected and processed through Google Firebase Analytics on Tinker Apps' behalf to understand app usage and improve functionality, subject to Google's applicable privacy terms.</li>
   <li><strong>Purchase confirmation</strong> — your in-app purchases are processed through Google Play Billing. The app receives only a confirmation of a completed purchase to unlock features. Tinker Apps does not store or transmit your payment information.</li>
 </ul>
-<p>Data collected by third-party SDKs is transmitted over encrypted connections (HTTPS/TLS). Tinker Apps does not control how third-party services collect, store, or use this data.</p>
+<p>Data collected by third-party SDKs is transmitted over encrypted connections (HTTPS/TLS). These third-party services operate as independent data controllers (or as processors acting on Tinker Apps' behalf) and process data according to their own privacy policies.</p>
 
 <h2>Word Suggestions</h2>
 <p>The app includes an optional feature that lets you suggest a word for the game. If you choose to submit a suggestion, the word you enter — along with the selected category and game mode — is sent to a Google Form operated by Tinker Apps so we can review it. Submissions are voluntary and are sent only when you tap submit; if you never use this feature, no suggestion data is sent.</p>
@@ -63,7 +63,7 @@ United States<br>
 <p><strong>Users outside the EEA, UK, and Switzerland</strong> may receive personalized ads based on their device's Advertising ID. You can reset or limit ad tracking at any time in your device's Google settings.</p>
 
 <h2>Managing or Withdrawing Your Consent</h2>
-<p>Where applicable, the app presents a Google consent message (provided through Google's User Messaging Platform) describing how data may be used for advertising. If you are located in the EEA, UK, or Switzerland, your consent is revocable: you can change or withdraw the choices you made at any time.</p>
+<p>Where applicable, the app presents a Google consent message (provided through Google's User Messaging Platform) describing how data may be used for advertising and analytics. In the EEA, UK, and Switzerland, Firebase Analytics does not store or use device identifiers until you consent through this message; if you decline, analytics identifiers stay disabled. Your consent is revocable: you can change or withdraw the choices you made at any time.</p>
 <p>To do so, open the app and go to <strong>Settings &rarr; Manage Ad Privacy Options</strong>. This re-opens the Google consent message, where you can review and update your advertising consent — withdrawing consent is as easy as giving it. Your updated choices take effect immediately for future ads. Withdrawing consent does not affect data already processed before the withdrawal, and it does not remove ads; it switches them to non-personalized (ads can be removed entirely only through the separate ad-free purchase).</p>
 
 <h2>Age Signals &amp; Age-Appropriate Experiences</h2>
@@ -71,7 +71,7 @@ United States<br>
 <p>The app uses this information only to provide an age-appropriate experience — specifically, to apply more restrictive, non-personalized advertising settings for users who are minors, and to restrict in-app purchases for minors without verified parental consent — and for legal compliance and safety, as permitted by these laws. Tinker Apps does not use this age information for any other purpose and does not store it on its own servers. Age verification and parental consent are handled by Google Play. This signal is provided only for users in regions where it is legally required; in all other cases the app applies its standard settings.</p>
 
 <h2>International Data Transfers</h2>
-<p>Google AdMob, Google Play Billing, Firebase Crashlytics, and Firebase Analytics may transfer and process your data on servers located outside the European Economic Area, including in the United States. Google relies on Standard Contractual Clauses approved by the European Commission as the legal mechanism for these transfers. For more information, see <a href="https://policies.google.com/privacy/frameworks">https://policies.google.com/privacy/frameworks</a>. Tinker Apps does not independently transfer personal data outside your country of residence.</p>
+<p>Google AdMob, Google Play Billing, Firebase Crashlytics, and Firebase Analytics may transfer and process your data on servers located outside the European Economic Area, including in the United States. Google uses legally approved mechanisms for these international data transfers, including the European Commission's Standard Contractual Clauses where applicable. For more information, see <a href="https://policies.google.com/privacy/frameworks">https://policies.google.com/privacy/frameworks</a>. Tinker Apps does not independently transfer personal data outside your country of residence.</p>
 
 
 <h2>In-App Purchases</h2>
@@ -83,7 +83,7 @@ United States<br>
 <p>Tinker Apps does not receive or store any payment information. All billing data is handled by Google under their terms of service.</p>
 
 <h2>Third Parties</h2>
-<p>The app integrates the following third-party SDKs:</p>
+<p>The app integrates the following third-party software development kits (SDKs) provided by Google. The app itself does not use cookies or web tracking pixels; these SDKs may use device identifiers and similar technologies to provide their services:</p>
 <ul>
   <li><strong>Google AdMob</strong> — ad serving and measurement. See <a href="https://support.google.com/admob/answer/6128543">https://support.google.com/admob/answer/6128543</a>.</li>
   <li><strong>Google Play Billing</strong> — in-app purchase processing.</li>
@@ -98,11 +98,20 @@ United States<br>
 <h2>Data Deletion</h2>
 <p>You can delete all locally stored game data by uninstalling the app or clearing app data in your device settings. To request deletion of data held by Google, visit <a href="https://myaccount.google.com">https://myaccount.google.com</a> or contact Google directly.</p>
 
+<h2>Your Choices</h2>
+<p>You have several controls over the data processed through the app:</p>
+<ul>
+  <li><strong>Withdraw or change ad/analytics consent</strong> (EEA, UK &amp; Switzerland) — open <em>Settings &rarr; Manage Ad Privacy Options</em> in the app to re-present the Google consent message.</li>
+  <li><strong>Opt out of personalized ads / reset your advertising ID</strong> — in your device settings under <em>Settings &rarr; Google &rarr; Ads</em>.</li>
+  <li><strong>Manage data held by Google</strong> — at <a href="https://myaccount.google.com">https://myaccount.google.com</a>.</li>
+  <li><strong>Remove local game data</strong> — uninstall the app or clear app data in your device settings.</li>
+</ul>
+
 <h2>Legal Bases for Processing (EEA, UK &amp; Switzerland)</h2>
 <p>Where EU/UK data protection law applies, Tinker Apps relies on the following legal bases:</p>
 <ul>
-  <li><strong>Consent</strong> — personalized advertising in the EEA, UK, and Switzerland, gathered through Google's certified consent platform. Where consent is not given, ads are limited to non-personalized serving. You may withdraw consent at any time under <em>Settings &rarr; Manage Ad Privacy Options</em>.</li>
-  <li><strong>Legitimate interests</strong> — crash reporting, app diagnostics, and app improvement via Firebase, where these interests are not overridden by your privacy rights.</li>
+  <li><strong>Consent</strong> — personalized advertising, and analytics that rely on device identifiers, in the EEA, UK, and Switzerland, gathered through Google's consent message. Until you consent (and if you decline), Firebase Analytics does not store or use device identifiers and ads are limited to non-personalized serving. You may withdraw consent at any time under <em>Settings &rarr; Manage Ad Privacy Options</em>.</li>
+  <li><strong>Legitimate interests</strong> — crash reporting and app-stability diagnostics via Firebase Crashlytics, and, outside the EEA, UK, and Switzerland, analytics for app improvement, where these interests are not overridden by your privacy rights.</li>
   <li><strong>Contract</strong> — processing necessary to complete in-app purchases you initiate.</li>
 </ul>
 
@@ -119,14 +128,21 @@ United States<br>
 <p>Since Tinker Apps does not directly collect or store personal data, most of these rights apply to data held by Google. You can exercise them through your Google account at <a href="https://myaccount.google.com">https://myaccount.google.com</a> or by contacting Google directly. To submit a request to Tinker Apps, use the contact details in the Data Subject Requests section below.</p>
 <p>You also have the right to lodge a complaint with your local data protection authority. In the EU, a list of national authorities is available at <a href="https://edpb.europa.eu/about-edpb/about-edpb/members_en">https://edpb.europa.eu/about-edpb/about-edpb/members_en</a>. In the UK, the relevant authority is the Information Commissioner's Office at <a href="https://ico.org.uk">https://ico.org.uk</a>.</p>
 
-<h2>Your Rights (California — CCPA/CPRA)</h2>
-<p>If you are a California resident, you may have additional rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA), including the right to know what personal information is collected, the right to delete personal information, and the right to opt out of the sale or sharing of personal information. Tinker Apps does not sell personal information. Depending on your jurisdiction, third-party advertising services integrated into the app (Google AdMob) may process data in ways that may be considered "sharing" under California law. You can limit this by resetting or opting out of ad personalization in your device's Google settings. To submit a California privacy request, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>.</p>
+<h2>Your Rights (U.S. State Privacy Laws)</h2>
+<p>Depending on your state of residence (for example, California, Virginia, Colorado, Connecticut, Utah, or Texas), you may have rights under applicable state privacy laws, including the right to know what categories of personal information are collected, the right to delete personal information, the right to correct inaccurate information, and the right to opt out of targeted advertising or the "sale" or "sharing" of personal information. Tinker Apps does not sell personal information and will not discriminate against you for exercising any of these rights.</p>
+<p>In particular, California residents have rights under the California Consumer Privacy Act (CCPA) as amended by the California Privacy Rights Act (CPRA). Depending on your jurisdiction, the use of advertising identifiers by Google AdMob to serve personalized ads may be considered "sharing" for cross-context behavioral advertising under these laws. You can limit this by resetting or opting out of ad personalization in your device's Google settings; users in the EEA, UK, and Switzerland can manage their consent under <em>Settings &rarr; Manage Ad Privacy Options</em>. To submit a privacy request, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>.</p>
 
 <h2>Data Subject Requests</h2>
 <p>To exercise any privacy right or submit a data-related request, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a>. Please include enough information to identify your request. We will respond within 30 days (or within the timeframe required by applicable law). Because Tinker Apps does not directly hold personal data, we may direct you to Google for requests relating to AdMob or billing data.</p>
 
 <h2>Children</h2>
-<p>The app is not directed to children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has used the app and personal information has been collected, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a> and we will take appropriate steps.</p>
+<p>The app is not directed to children under 13. We do not knowingly collect personal information from children under 13. While the app is not directed to children, we use age signals where available (see <em>Age Signals &amp; Age-Appropriate Experiences</em> above) to provide age-appropriate experiences and to comply with applicable laws. If you believe a child under 13 has used the app and personal information has been collected, contact us at <a href="mailto:tinkerapps.support@gmail.com">tinkerapps.support@gmail.com</a> and we will take appropriate steps.</p>
+
+<h2>Automated Decision-Making</h2>
+<p>The app does not use automated decision-making or profiling that produces legal or similarly significant effects concerning you.</p>
+
+<h2>Data Breach Notification</h2>
+<p>Tinker Apps does not directly hold personal data on its own infrastructure. In the event of a qualifying personal-data breach, and where required by applicable law, Tinker Apps will notify the relevant supervisory authorities and affected users without undue delay (for example, within 72 hours of becoming aware, as required under the GDPR). Data processed by Google services is also subject to Google's own breach-notification obligations.</p>
 
 <h2>Changes to This Policy</h2>
 <p>We may update this privacy policy from time to time. The updated date at the top of this page will reflect any changes. Where changes materially affect how your data is processed, we will take reasonable steps to notify you, and where legally required we will seek renewed consent before those changes take effect.</p>
